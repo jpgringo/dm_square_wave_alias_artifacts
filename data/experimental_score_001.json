@@ -2,7 +2,7 @@
 	"__settings" : {
 		"presets" : {
 			"data_file" : "experimental_score_001_presets.json",
-			"descriptions_file" : ""
+			"descriptions_file" : "experimental_score_001_preset_descriptions.json"
 		}
 	},
 	"intro" : 	{
