@@ -2,5 +2,15 @@
 	"1" : [ "ominous growl", "alternates nicely with 17 (bathyscape static)" ],
 	"2" : [ "ibiza ultrasound", "" ],
 	"3" : [ "short circuit syncope", "" ],
-	"4" : [ "insistent horns", "" ]
+	"4" : [ "insistent horns", "" ],
+	"8" : [ "electrogrind in blue", "try blending this with 9. pulsing choir for lots of interesting choral effects"],
+	"9" : [ "pulsing choir", ""],
+	"10" : [ "gamma overload", "" ],
+	"11" : [ "frog in a pot", ""],
+	"12" : [ "medevac blackout", "" ],
+	"13" : [ "hi-tech didgerodel", ""],
+	"14" : [ "caught between dimensions", "try this at a 96kHz sampling rate"],
+	"17" : [ "all hail cthulu", "" ],
+	"18" : [ "what's about to happen?", "" ],
+	"25" : [ "screaming hell", "" ]
 }
