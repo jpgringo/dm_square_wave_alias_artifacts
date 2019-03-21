@@ -2,7 +2,7 @@
 	"name" : "Square Wave Alias Artifacts",
 	"version" : 1,
 	"creationdate" : 3634290212,
-	"modificationdate" : 3634542295,
+	"modificationdate" : 3636018026,
 	"viewrect" : [ 25.0, 69.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -20,6 +20,34 @@
 				"kind" : "patcher",
 				"local" : 1
 			}
+,
+			"NodeJS Test.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"Score Reader - JS.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+
+		}
+,
+		"code" : 		{
+			"score_reader.js" : 			{
+				"kind" : "javascript",
+				"local" : 1
+			}
+,
+			"score_parser.js" : 			{
+				"kind" : "javascript",
+				"local" : 1
+			}
+,
+			"preset_logic.js" : 			{
+				"kind" : "javascript",
+				"local" : 1
+			}
 
 		}
 ,
@@ -30,6 +58,16 @@
 			}
 ,
 			"experimental_score_001.json" : 			{
+				"kind" : "json",
+				"local" : 1
+			}
+,
+			"experimental_score_001_preset_descriptions.json" : 			{
+				"kind" : "json",
+				"local" : 1
+			}
+,
+			"experimental_score_002.json" : 			{
 				"kind" : "json",
 				"local" : 1
 			}

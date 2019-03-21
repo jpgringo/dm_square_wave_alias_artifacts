@@ -8,15 +8,24 @@
 	"intro" : 	{
 		"base_freq" : 880,
 		"lfo_rate" : 0.25,
-		"location" : "project local"
+		"location" : "project local",
+		"structure" : {
+			"duration" : 3
+		}
 	}
 ,
 	"section_A" : 	{
-		"base_freq" : 440
+		"base_freq" : 440,
+		"lfo_rate" : 0.5,
+		"structure" : {
+			"duration" : 2
+		}
 	},
 	"section_B" : {
+		"base_freq" : 20000,
+		"lfo_rate" : 0.125,
 		"structure" : {
-			"duration" : 15.5,
+			"duration" : 5,
 			"tempo" : 84,
 			"slope" : [ 0, 0 , 5.0, 0.25, 9.5, 0.75, 12, 0.4, 15, 0.1 ]
 		},
@@ -26,6 +35,18 @@
 				"range" : [100, 1200]
 			}
 		}
+	},
+	"section_C" : {
+		"next_action" : "stop",
+		"base_freq" : 15000,
+		"lfo_rate" : 0.06,
+		"structure" : {
+			"duration" : 2,
+			"phrases" : [
+				{
+					"name" : "A"
+				}
+			]
+		}
 	}
-
 }
