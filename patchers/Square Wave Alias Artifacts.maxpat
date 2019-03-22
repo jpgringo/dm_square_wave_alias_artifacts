@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -2340.0, -131.0, 1923.0, 1474.0 ],
+		"rect" : [ -2830.0, -131.0, 2709.0, 1677.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -58,17 +58,6 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1820.0, 457.0, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-205",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 2083.0, 582.0, 59.0, 22.0 ],
-					"text" : "print foob"
 				}
 
 			}
@@ -1651,24 +1640,24 @@
 					"patching_rect" : [ 1847.0, 92.0, 100.0, 22.0 ],
 					"restore" : 					{
 						"antialiased_gain" : [ -70.0 ],
-						"cut_freq" : [ 511.0 ],
-						"filter_1" : [ 1, 0, 9, 1, 0, 0, 151.265304565429688, 1.755529880523682, 2.921737909317017 ],
-						"filter_1_mode" : [ 9 ],
-						"fixed_frequency" : [ 17649.865234375 ],
-						"freq_kslider" : [ 62 ],
+						"cut_freq" : [ 352.0 ],
+						"filter_1" : [ 1, 0, 1, 1, 0, 0, 1225.0535888671875, 2.568063735961914, 3.353902816772461 ],
+						"filter_1_mode" : [ 1 ],
+						"fixed_frequency" : [ 17545.96875 ],
+						"freq_kslider" : [ 74 ],
 						"frequency_source" : [ 1.0 ],
-						"hiband_gain" : [ -11.986849581946586 ],
-						"hiband_pitch_shift[1]" : [ 0.0675 ],
-						"kbd_center_frequency" : [ 17574.181640625 ],
-						"kbd_center_frequency[1]" : [ 107.722442626953125 ],
-						"lfo_rate" : [ 0.092856495653551 ],
+						"hiband_gain" : [ -4.558649241009832 ],
+						"hiband_pitch_shift[1]" : [ 0.3 ],
+						"kbd_center_frequency" : [ 17059.314453125 ],
+						"kbd_center_frequency[1]" : [ 41.055168151855469 ],
+						"lfo_rate" : [ 0.065 ],
 						"live.dial" : [ 168.503936767578125 ],
 						"live.text" : [ 0.0 ],
 						"live.text[1]" : [ 0.0 ],
 						"live.text[2]" : [ 0.0 ],
-						"loband_gain" : [ -3.791390419006348 ],
-						"master-gain" : [ -26.406029838375481 ],
-						"modulation_range" : [ 0.472886331500112 ]
+						"loband_gain" : [ -3.485023134994705 ],
+						"master-gain" : [ -28.227414007459586 ],
+						"modulation_range" : [ 0.496062992125984 ]
 					}
 ,
 					"text" : "autopattr ui",
@@ -2163,7 +2152,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 968.6666259765625, 233.0, 146.0, 20.0 ],
 					"style" : "default",
-					"text" : "gamma overload"
+					"text" : "all hail cthulu"
 				}
 
 			}
@@ -2222,7 +2211,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1521.0, 353.0, 252.0, 22.0 ],
-					"text" : "\"10\" \"gamma overload\" "
+					"text" : "\"17\" \"all hail cthulu\" "
 				}
 
 			}
@@ -2537,7 +2526,7 @@
 
 					}
 ,
-					"setfilter" : [ 0, 9, 1, 0, 0, 151.265304565429688, 1.755529880523682, 2.921737909317017, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
+					"setfilter" : [ 0, 1, 1, 0, 0, 1225.0535888671875, 2.568063735961914, 3.353902816772461, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
 					"varname" : "filter_1"
 				}
 
@@ -2730,7 +2719,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 1538.0, 763.0, 56.0, 22.0 ],
-					"sig" : 62.0
+					"sig" : 74.0
 				}
 
 			}
@@ -2814,8 +2803,8 @@
 					"patching_rect" : [ 687.5, 962.0, 83.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"enabled" : [ 1 ],
-						"pitchshift" : [ 0.0675 ],
-						"pitchshiftcent" : [ -4667 ],
+						"pitchshift" : [ 0.3 ],
+						"pitchshiftcent" : [ -2084 ],
 						"quality" : "better",
 						"reportlatency" : 0,
 						"usecents" : 0
@@ -2880,7 +2869,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 712.0, 132.0, 56.0, 22.0 ],
-					"sig" : 0.092856495653551
+					"sig" : 0.065
 				}
 
 			}
@@ -4157,15 +4146,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-203", 0 ],
-					"order" : 0,
-					"source" : [ "obj-202", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-205", 0 ],
-					"order" : 1,
 					"source" : [ "obj-202", 0 ]
 				}
 

@@ -48,7 +48,6 @@ function outputSectionValues(section, path) {
         else if (subsection instanceof Object) {
             outputSectionValues(subsection, path.concat(key));
         } else {
-            post('key \'' + key + '\': ' + subsection + ' (' + (typeof subsection) + ')\n');
             if (typeof subsection === 'string') {
                 subsection = '"' + subsection + '"';
             }
@@ -58,24 +57,17 @@ function outputSectionValues(section, path) {
 }
 
 function getSection(sectionIdentifier) {
-    post('will get section with id \'' + sectionIdentifier + '\'\n');
-    post(score);
     if (score !== undefined && score.sections !== undefined) {
         var numericValue = parseInt(sectionIdentifier);
         if(!isNaN(numericValue)) {
             sectionIdentifier = Object.keys(score.sections)[numericValue];
-            post('identfier is now \'' + sectionIdentifier + '\'\n');
         } else {
             numericValue = Object.keys(score.sections).indexOf(sectionIdentifier);
         }
         if (score.sections[sectionIdentifier] !== undefined) {
-            post('will parse and return section ' + sectionIdentifier + '\n');
             const currentSectionDict = new Dict('current_section');
-            post('currentSectionDict', JSON.stringify(score.sections[sectionIdentifier]), '\n');
-            // currentSectionDict.parse(score.sections[sectionName]);
             currentSectionDict.parse(JSON.stringify(score.sections[sectionIdentifier]));
             outlet(0, 'section name ' + sectionIdentifier);
-            post('numeric Value', numericValue, '\n');
             outlet(0, 'section index ' + numericValue);
             outputSectionValues(score.sections[sectionIdentifier], 'section');
         }

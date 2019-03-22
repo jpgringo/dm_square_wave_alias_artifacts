@@ -57,7 +57,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1057.0, 468.0, 61.0, 22.0 ],
-					"presentation_linecount" : 3,
 					"text" : "set $1: $2"
 				}
 
@@ -71,7 +70,7 @@
 					"patching_rect" : [ 1057.0, 506.0, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 28.3333740234375, 183.0, 341.0, 20.0 ],
-					"text" : "0 0"
+					"text" : "0: intro"
 				}
 
 			}
@@ -79,7 +78,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-5",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -91,7 +90,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-4",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -115,7 +114,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1817,24 +1816,6 @@
 
 			}
  ],
-		"parameters" : 		{
-			"obj-78" : [ "live.text[2]", "live.text[1]", 0 ],
-			"obj-74" : [ "live.text[3]", "live.text", 0 ],
-			"parameterbanks" : 			{
-
-			}
-
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "section_progress.maxpat",
-				"bootpath" : "~/Documents/Music Making/MaxMSP/Square Wave Alias Artifacts/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "ksliderWhite",
 				"default" : 				{

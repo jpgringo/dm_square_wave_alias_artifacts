@@ -21,13 +21,11 @@ maxApi.addHandler('readScore', filename => {
     // maxApi.outlet(sections, 2);
     maxApi.outlet('scoreLoaded');
   }
-  maxApi.post(`loaded score from '${filename}'`);
 });
 
 maxApi.addHandler('getSections', () => {
   if(currentScoreData !== undefined) {
     const sections = currentScoreData.sections;
-    maxApi.post('that worked');
     maxApi.outlet(sections, 2);
     maxApi.setDict('sections', sections);
   }

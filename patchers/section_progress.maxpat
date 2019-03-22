@@ -208,7 +208,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-15",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -238,7 +238,7 @@
 					"patching_rect" : [ 191.0, 324.0, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 155.0, 77.0, 86.0, 20.0 ],
-					"text" : "target: 0"
+					"text" : "96057.58"
 				}
 
 			}
@@ -250,7 +250,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 148.0, 399.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 100.0, 130.0, 20.0 ]
+					"presentation_rect" : [ 2.0, 100.0, 130.0, 20.0 ],
+					"text" : "bpm: 120.00"
 				}
 
 			}
@@ -274,7 +275,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 105.0, 464.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 126.0, 130.0, 20.0 ]
+					"presentation_rect" : [ 2.0, 126.0, 130.0, 20.0 ],
+					"text" : "time signature: 2 4"
 				}
 
 			}
@@ -298,7 +300,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 62.0, 534.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 77.0, 130.0, 20.0 ]
+					"presentation_rect" : [ 2.0, 77.0, 130.0, 20.0 ],
+					"text" : "ticks per beat: 480.00"
 				}
 
 			}
@@ -330,7 +333,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-2",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -360,7 +363,7 @@
 					"patching_rect" : [ 696.0, 569.5, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 199.0, 36.5, 42.0, 20.0 ],
-					"text" : "2.00"
+					"text" : "7660"
 				}
 
 			}
@@ -380,6 +383,7 @@
 				"box" : 				{
 					"floatoutput" : 1,
 					"id" : "obj-9",
+					"knobshape" : 4,
 					"maxclass" : "slider",
 					"numinlets" : 1,
 					"numoutlets" : 1,
@@ -388,7 +392,7 @@
 					"patching_rect" : [ 371.0, 324.0, 239.0, 23.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 2.0, 2.5, 239.0, 23.0 ],
-					"size" : 2.0
+					"size" : 7661.0
 				}
 
 			}
@@ -635,8 +639,6 @@
 
 			}
  ],
-		"dependency_cache" : [  ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "ksliderWhite",
 				"default" : 				{
