@@ -144,7 +144,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 696.0, 405.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 279.0, 14.5, 50.0, 22.0 ],
+					"presentation_rect" : [ 270.0, 2.5, 50.0, 22.0 ],
 					"textcolor" : [ 0.941176470588235, 0.882352941176471, 0.062745098039216, 1.0 ]
 				}
 
@@ -172,7 +172,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 856.0, 315.0, 92.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 164.0, 138.0, 92.0, 22.0 ],
+					"presentation_rect" : [ 155.0, 126.0, 92.0, 22.0 ],
 					"textcolor" : [ 1.0, 0.301960784313725, 0.301960784313725, 1.0 ]
 				}
 
@@ -200,7 +200,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 599.0, 80.0, 92.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 164.0, 112.0, 92.0, 22.0 ]
+					"presentation_rect" : [ 155.0, 100.0, 92.0, 22.0 ]
 				}
 
 			}
@@ -237,7 +237,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 191.0, 324.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 164.0, 89.0, 86.0, 20.0 ],
+					"presentation_rect" : [ 155.0, 77.0, 86.0, 20.0 ],
 					"text" : "target: 0"
 				}
 
@@ -250,7 +250,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 148.0, 399.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 11.0, 112.0, 130.0, 20.0 ]
+					"presentation_rect" : [ 2.0, 100.0, 130.0, 20.0 ]
 				}
 
 			}
@@ -274,7 +274,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 105.0, 464.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 11.0, 138.0, 130.0, 20.0 ]
+					"presentation_rect" : [ 2.0, 126.0, 130.0, 20.0 ]
 				}
 
 			}
@@ -298,7 +298,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 62.0, 534.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 11.0, 89.0, 130.0, 20.0 ]
+					"presentation_rect" : [ 2.0, 77.0, 130.0, 20.0 ]
 				}
 
 			}
@@ -359,7 +359,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 696.0, 569.5, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 208.0, 48.5, 42.0, 20.0 ],
+					"presentation_rect" : [ 199.0, 36.5, 42.0, 20.0 ],
 					"text" : "2.00"
 				}
 
@@ -387,7 +387,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 371.0, 324.0, 239.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 11.0, 14.5, 239.0, 23.0 ],
+					"presentation_rect" : [ 2.0, 2.5, 239.0, 23.0 ],
 					"size" : 2.0
 				}
 

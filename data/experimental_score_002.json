@@ -60,7 +60,7 @@
             }
         },
         "section_C": {
-            "next_action": "stop",
+            "next_action": "continue",
             "base_freq": 15000,
             "lfo_rate": 0.06,
             "init" : {
@@ -68,6 +68,22 @@
             },
             "structure": {
                 "duration": 2,
+                "phrases": [
+                    {
+                        "name": "A"
+                    }
+                ]
+            }
+        },
+        "section_D": {
+            "next_action": "stop",
+            "base_freq": 15000,
+            "lfo_rate": 0.06,
+            "init" : {
+                "starting_preset" : "all hail cthulu"
+            },
+            "structure": {
+                "duration": 8,
                 "phrases": [
                     {
                         "name": "A"
