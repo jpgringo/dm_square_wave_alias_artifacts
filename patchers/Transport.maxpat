@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 104.0, 2240.0, 1233.0 ],
+		"rect" : [ 762.0, 132.0, 2240.0, 1233.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,9 +39,21 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 1250.0, 314.0, 119.0, 22.0 ],
+					"text" : "route duration tempo"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -678,7 +690,7 @@
 							"parameter_shortname" : "live.text[1]",
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
-							"parameter_longname" : "live.text[1]"
+							"parameter_longname" : "live.text[2]"
 						}
 
 					}
@@ -998,7 +1010,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2357.83349609375, 666.0, 50.0, 22.0 ],
-					"text" : "0"
+					"text" : "1"
 				}
 
 			}
@@ -1023,7 +1035,7 @@
 							"parameter_shortname" : "live.text",
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
-							"parameter_longname" : "live.text"
+							"parameter_longname" : "live.text[3]"
 						}
 
 					}
@@ -1085,7 +1097,7 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-87", 0 ],
+					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -1301,6 +1313,13 @@
 					"destination" : [ "obj-48", 0 ],
 					"midpoints" : [ 2022.5, 532.75, 2072.08349609375, 532.75 ],
 					"source" : [ "obj-156", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-87", 0 ],
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -1700,24 +1719,6 @@
 
 			}
  ],
-		"parameters" : 		{
-			"obj-78" : [ "live.text[1]", "live.text[1]", 0 ],
-			"obj-74" : [ "live.text", "live.text", 0 ],
-			"parameterbanks" : 			{
-
-			}
-
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "section_progress.maxpat",
-				"bootpath" : "~/Documents/Music Making/MaxMSP/Square Wave Alias Artifacts/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "ksliderWhite",
 				"default" : 				{
