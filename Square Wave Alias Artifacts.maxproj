@@ -2,7 +2,7 @@
 	"name" : "Square Wave Alias Artifacts",
 	"version" : 1,
 	"creationdate" : 3634290212,
-	"modificationdate" : 3636098244,
+	"modificationdate" : 3636185296,
 	"viewrect" : [ 24.0, 69.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -31,12 +31,12 @@
 				"local" : 1
 			}
 ,
-			"section_progress.maxpat" : 			{
+			"Score_Transport.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"Transport.maxpat" : 			{
+			"section_progress.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
