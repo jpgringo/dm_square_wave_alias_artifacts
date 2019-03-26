@@ -7,11 +7,11 @@
     },
     "sections": {
         "intro": {
-            "init" : {
+            "init": {
                 "base_freq": 880,
                 "lfo_rate": 0.25,
                 "location": "project local",
-                "starting_preset" : "pulsing choir"
+                "starting_preset": "pulsing choir"
             },
             "structure": {
                 "duration": 3
@@ -20,18 +20,49 @@
         "section_A": {
             "base_freq": 440,
             "lfo_rate": 0.5,
-            "init" : {
-                "starting_preset" : "3"
+            "init": {
+                "starting_preset": "3"
             },
             "structure": {
                 "duration": 2
             }
         },
+        "ominous_interlude": {
+            "init": {
+                "starting_preset": "omen-ous"
+            },
+            "structure": {
+                "duration": 10,
+                "phrases": [
+                    {
+                        "name": "slow_reveal",
+                        "ramps": {
+                            "cutover_freq": {
+                                "initial": 1000,
+                                "points": [
+                                    0.0,
+                                    1000,
+                                    319.0,
+                                    7000
+                                ]
+                            },
+                            "pitch_shift": {
+                                "initial": 0.3,
+                                "points": [
+                                    3.0,
+                                    6000
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        },
         "section_B": {
             "base_freq": 20000,
             "lfo_rate": 0.125,
-            "init" : {
-                "starting_preset" : "gamma overload"
+            "init": {
+                "starting_preset": "gamma overload"
             },
             "structure": {
                 "duration": 5,
@@ -63,8 +94,8 @@
             "next_action": "continue",
             "base_freq": 15000,
             "lfo_rate": 0.06,
-            "init" : {
-                "starting_preset" : "screaming hell"
+            "init": {
+                "starting_preset": "screaming hell"
             },
             "structure": {
                 "duration": 2,
@@ -76,17 +107,65 @@
             }
         },
         "section_D": {
-            "next_action": "stop",
+            "next_action": "continue",
             "base_freq": 15000,
             "lfo_rate": 0.06,
-            "init" : {
-                "starting_preset" : "all hail cthulu"
+            "init": {
+                "starting_preset": "all hail cthulu"
             },
             "structure": {
                 "duration": 8,
                 "phrases": [
                     {
                         "name": "A"
+                    }
+                ]
+            }
+        },
+        "section_E": {
+            "next_action": "stop",
+            "base_freq": 15000,
+            "lfo_rate": 0.06,
+            "init": {
+                "starting_preset": "frog in a pot"
+            },
+            "structure": {
+                "phrases": [
+                    {
+                        "name": "A",
+                        "ramps": {
+                            "center_freq": {
+                                "initial": 0.0,
+                                "points": [
+                                    0.5,
+                                    1000,
+                                    0.5,
+                                    1500,
+                                    1.0,
+                                    2000,
+                                    1.0,
+                                    500,
+                                    0.0,
+                                    4000
+                                ]
+                            },
+                            "lfo_freq": {
+                                "initial": 0.06,
+                                "points": [
+                                    4.0,
+                                    4500,
+                                    0.06,
+                                    4500
+                                ]
+                            },
+                            "mod_range": {
+                                "initial": 0.0,
+                                "points": [
+                                    0.4,
+                                    9000
+                                ]
+                            }
+                        }
                     }
                 ]
             }

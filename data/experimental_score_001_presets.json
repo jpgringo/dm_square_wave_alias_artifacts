@@ -366,6 +366,58 @@
 
 			}
 ,
+			"23" : 			{
+				"id" : 23,
+				"data" : 				{
+					"antialiased_gain" : [ -70.0 ],
+					"cut_freq" : [ 352.0 ],
+					"filter_1" : [ 1, 0, 1, 1, 0, 0, 1225.0535888671875, 2.568063735961914, 3.353902816772461 ],
+					"filter_1_mode" : [ 1 ],
+					"fixed_frequency" : [ 17545.96875 ],
+					"freq_kslider" : [ 68 ],
+					"frequency_source" : [ 1.0 ],
+					"hiband_gain" : [ -2.164948453608261 ],
+					"hiband_pitch_shift[1]" : [ 0.3 ],
+					"kbd_center_frequency" : [ 17059.314453125 ],
+					"kbd_center_frequency[1]" : [ 41.055168151855469 ],
+					"lfo_rate" : [ 0.0625 ],
+					"live.dial" : [ 168.503936767578125 ],
+					"live.text" : [ 0.0 ],
+					"live.text[1]" : [ 0.0 ],
+					"live.text[2]" : [ 0.0 ],
+					"loband_gain" : [ -3.485023134994705 ],
+					"master-gain" : [ -31.815375051802732 ],
+					"modulation_range" : [ 0.4 ]
+				}
+
+			}
+,
+			"24" : 			{
+				"id" : 24,
+				"data" : 				{
+					"antialiased_gain" : [ -70.0 ],
+					"cut_freq" : [ 352.0 ],
+					"filter_1" : [ 1, 0, 1, 1, 0, 0, 218.100006103515625, 2.568063735961914, 3.353902816772461 ],
+					"filter_1_mode" : [ 1 ],
+					"fixed_frequency" : [ 17545.96875 ],
+					"freq_kslider" : [ 74 ],
+					"frequency_source" : [ 1.0 ],
+					"hiband_gain" : [ -2.164948453608261 ],
+					"hiband_pitch_shift[1]" : [ 0.3 ],
+					"kbd_center_frequency" : [ 17059.314453125 ],
+					"kbd_center_frequency[1]" : [ 41.055168151855469 ],
+					"lfo_rate" : [ 0.0625 ],
+					"live.dial" : [ 168.503936767578125 ],
+					"live.text" : [ 0.0 ],
+					"live.text[1]" : [ 0.0 ],
+					"live.text[2]" : [ 0.0 ],
+					"loband_gain" : [ -3.485023134994705 ],
+					"master-gain" : [ -13.826150020721123 ],
+					"modulation_range" : [ 0.4 ]
+				}
+
+			}
+,
 			"25" : 			{
 				"id" : 25,
 				"data" : 				{

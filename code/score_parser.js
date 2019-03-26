@@ -32,7 +32,7 @@ function getSectionNames() {
     outlet(1, 'sectionNames', sectionNameList);
 }
 
-function outputSectionValues(section, path) {
+function outputSectionValues(section, path, excludedKeys) {
     if (path === undefined) {
         path = [];
     } else if (typeof path === 'string') {
@@ -41,12 +41,15 @@ function outputSectionValues(section, path) {
     const objectKeys = Object.keys(section);
     for (var i = 0; i < objectKeys.length; i++) {
         const key = objectKeys[i];
+        if (excludedKeys !== undefined && excludedKeys.indexOf(key) !== -1) {
+            continue;
+        }
         const subsection = section[objectKeys[i]];
         if (subsection instanceof Array) {
             outlet(0, [path.concat(key).join(' '), subsection.join(' ')]);
         }
         else if (subsection instanceof Object) {
-            outputSectionValues(subsection, path.concat(key));
+            outputSectionValues(subsection, path.concat(key), excludedKeys);
         } else {
             if (typeof subsection === 'string') {
                 subsection = '"' + subsection + '"';
@@ -56,21 +59,74 @@ function outputSectionValues(section, path) {
     }
 }
 
-function getSection(sectionIdentifier) {
+retrievePhrase.local = 1;
+function retrievePhrase(sectionIdentifier, phraseIdentifier) {
+    var phrase = undefined;
+    if(phraseIdentifier === undefined) {
+        phraseIdentifier = 0;
+    }
+    const section = retrieveSection(sectionIdentifier);
+    if (section != undefined) {
+        if (section.structure !== undefined && section.structure.phrases !== undefined) {
+            var phraseIndex =  parseInt(phraseIdentifier);
+            if(isNaN(phraseIndex)) {
+
+            } else {
+                if(phraseIndex < section.structure.phrases.length) {
+                    phrase = section.structure.phrases[phraseIndex];
+                    phrase.index = phraseIndex;
+                }
+            }
+        }
+    }
+    return phrase;
+}
+
+function serializeRamp(ramp) {
+    return (ramp.initial !== undefined ? ramp.initial + ', ' : '') +ramp.points.join(' ');
+}
+
+function getPhrase(sectionIdentifier, phraseIdentifier) {
+    post('sectionIdentifier:', sectionIdentifier, '\n');
+    const phrase = retrievePhrase(sectionIdentifier, phraseIdentifier);
+    if (phrase !== undefined) {
+        outlet(0, ['phrase id', sectionIdentifier, phrase.index, phrase.name].join(' '));
+        if(phrase.ramps !== undefined) {
+            const rampKeys = Object.keys(phrase.ramps);
+            for(var i=0; i < rampKeys.length; i++) {
+                const rampString = serializeRamp(phrase.ramps[rampKeys[i]])
+                outlet(0, ['phrase', 'ramp', sectionIdentifier, phrase.name, rampKeys[i], rampString].join(' '));
+            }
+        }
+    }
+}
+
+retrieveSection.local = 1;
+function retrieveSection(sectionIdentifier) {
+    var section = undefined;
     if (score !== undefined && score.sections !== undefined) {
         var numericValue = parseInt(sectionIdentifier);
-        if(!isNaN(numericValue)) {
+        if (!isNaN(numericValue)) {
             sectionIdentifier = Object.keys(score.sections)[numericValue];
         } else {
             numericValue = Object.keys(score.sections).indexOf(sectionIdentifier);
         }
-        if (score.sections[sectionIdentifier] !== undefined) {
-            const currentSectionDict = new Dict('current_section');
-            currentSectionDict.parse(JSON.stringify(score.sections[sectionIdentifier]));
-            outlet(0, 'section name ' + sectionIdentifier);
-            outlet(0, 'section index ' + numericValue);
-            outputSectionValues(score.sections[sectionIdentifier], 'section');
-        }
+        section = score.sections[sectionIdentifier];
+    }
+    section.id = sectionIdentifier
+    section.index = numericValue;
+    return section;
+}
+
+function getSection(sectionIdentifier) {
+    const section = retrieveSection(sectionIdentifier);
+    if (section != undefined) {
+        const currentSectionDict = new Dict('current_section');
+        currentSectionDict.parse(JSON.stringify(section));
+        outlet(0, 'section name ' + section.id);
+        outlet(0, 'section index ' + section.index);
+        outputSectionValues(section, 'section', ['phrases']);
+        getPhrase(section.id);
     }
 }
 
