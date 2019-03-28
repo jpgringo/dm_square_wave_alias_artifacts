@@ -2,9 +2,9 @@
 	"name" : "Square Wave Alias Artifacts",
 	"version" : 1,
 	"creationdate" : 3634290212,
-	"modificationdate" : 3636185296,
-	"viewrect" : [ 24.0, 69.0, 300.0, 500.0 ],
-	"autoorganize" : 1,
+	"modificationdate" : 3636529185,
+	"viewrect" : [ 39.0, 103.0, 486.0, 733.0 ],
+	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
 	"autolocalize" : 1,
@@ -40,6 +40,21 @@
 				"kind" : "patcher",
 				"local" : 1
 			}
+,
+			"Square Wave M4L Controller.amxd" : 			{
+				"kind" : "maxforlive",
+				"local" : 1
+			}
+,
+			"live_udp_interface.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"Dynamic Interface Test.amxd" : 			{
+				"kind" : "maxforlive",
+				"local" : 1
+			}
 
 		}
 ,
@@ -55,6 +70,11 @@
 			}
 ,
 			"score_parser.js" : 			{
+				"kind" : "javascript",
+				"local" : 1
+			}
+,
+			"dynamic_interface.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
 			}

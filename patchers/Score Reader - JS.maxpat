@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 91.0, 93.0, 1570.0, 1243.0 ],
+		"rect" : [ 1162.0, 79.0, 1570.0, 1243.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -93,7 +93,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-10",
@@ -305,7 +304,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 359.0, 667.927372455596924, 113.0, 22.0 ],
-									"text" : "7 0."
+									"text" : "4 0.4"
 								}
 
 							}
@@ -1931,6 +1930,8 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 1
 					}
 ,
@@ -2591,19 +2592,19 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-4::obj-74" : [ "live.text[7]", "live.text", 0 ],
 			"obj-4::obj-78" : [ "live.text[6]", "live.text[1]", 0 ],
+			"obj-4::obj-74" : [ "live.text[7]", "live.text", 0 ],
 			"parameterbanks" : 			{
 
 			}
 ,
 			"parameter_overrides" : 			{
-				"obj-4::obj-74" : 				{
-					"parameter_longname" : "live.text[7]"
-				}
-,
 				"obj-4::obj-78" : 				{
 					"parameter_longname" : "live.text[6]"
+				}
+,
+				"obj-4::obj-74" : 				{
+					"parameter_longname" : "live.text[7]"
 				}
 
 			}
